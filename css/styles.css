@@ -1,3 +1,4 @@
+/* DISCOUNT STYLES & ADDITIONAL STYLES */
 :root {
   --secondery-color: #404bbf;
   --header-color: #434455;
@@ -20,7 +21,40 @@
   color: var(--portfolio-color);
   text-decoration: none;
 }
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+}
+button {
+  cursor: pointer;
+}
+.container {
+  width: 1128px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 /*HEADER*/
+.header-main {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  background-color: var(--primary-color);
+}
 .logo {
   font-family: var(--secondary-font);
   font-weight: 800;
@@ -32,6 +66,14 @@
 }
 .logo-studio {
   color: var(--portfolio-color);
+}
+.menu-item:not(:last-child) {
+  margin-right: 40px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  margin-right: 76px;
 }
 .menu-link {
   font-family: var(--primary-font);
@@ -49,7 +91,7 @@
 .header-adress {
   font-style: normal;
 }
-.menu-link-cotact {
+.menu-link-contact {
   font-family: var(--primary-font);
   font-weight: 400;
   font-size: 16px;
@@ -57,15 +99,37 @@
   letter-spacing: 0.02em;
   color: var(--header-color);
 }
-.menu-link-cotact:hover,
-.menu-link-cotact:focus {
+.menu-link-contact:hover,
+.menu-link-contact:focus {
   color: var(--secondery-color);
   text-decoration: underline;
 }
+.haeder-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  outline: 3px solid red;
+}
+.header-nav {
+  display: flex;
+  text-align: center;
+}
+.menu-contacts {
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+  gap: 40px;
+}
+.menu {
+  display: flex;
+  align-items: center;
+}
 /* HERO */
+
 .hero {
   background: var(--portfolio-color);
   text-align: center;
+  display: inline-block;
 }
 .hero-text {
   font-size: 56px;
@@ -75,13 +139,17 @@
   color: var(--primary-color);
 }
 .hero-button {
+  border-radius: 4px;
+  padding: 16px 32px;
+  min-width: 169px;
+
   font-family: var(--primary-font);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   align-items: center;
-  cursor: pointer;
   letter-spacing: 0.04em;
+
   color: var(--primary-color);
   background-color: var(--accent-color);
 }
@@ -175,7 +243,6 @@
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--accent-color);
-  cursor: pointer;
   background-color: var(--background-origin);
 }
 .portfolio-button:hover,
