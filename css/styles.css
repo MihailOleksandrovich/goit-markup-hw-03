@@ -43,11 +43,11 @@ button {
   cursor: pointer;
 }
 .container {
-  width: 1128px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 1158px;
+  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+  outline: 3px solid rebeccapurple;
 }
 /*HEADER*/
 .header-main {
@@ -66,6 +66,7 @@ button {
 }
 .logo-studio {
   color: var(--portfolio-color);
+  margin-right: 76;
 }
 .menu-item:not(:last-child) {
   margin-right: 40px;
@@ -106,18 +107,22 @@ button {
 }
 .haeder-container {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
   outline: 3px solid red;
 }
 .header-nav {
   display: flex;
   text-align: center;
 }
-.menu-contacts {
+.header-adress {
   margin-left: auto;
+}
+.menu-contacts {
   display: flex;
-  justify-content: flex-end;
+  margin-left: auto;
+  justify-content: end;
   gap: 40px;
 }
 .menu {
@@ -129,13 +134,19 @@ button {
 .hero {
   background: var(--portfolio-color);
   text-align: center;
-  display: inline-block;
+  padding-top: 188px;
+  padding-bottom: 188px;
+  max-width: 2560px;
+  text-align: center;
+  outline: 3px solid green;
 }
 .hero-text {
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
+  margin: 0 auto;
   letter-spacing: 0.02em;
+  width: 496px;
   color: var(--primary-color);
 }
 .hero-button {
