@@ -38,22 +38,24 @@ ol {
 }
 img {
   display: block;
+  max-width: 100%;
 }
 button {
   cursor: pointer;
 }
 .container {
   width: 1158px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 3px solid rebeccapurple;
+  outline: 1px solid blue;
 }
 /*HEADER*/
 .header-main {
-  padding-top: 24px;
-  padding-bottom: 24px;
-  background-color: var(--primary-color);
+padding-top: 25.5px;
+padding-bottom: 25.5px;
+border-bottom: 1px solid #e7e9fc ;
 }
 .logo {
   font-family: var(--secondary-font);
@@ -66,14 +68,8 @@ button {
 }
 .logo-studio {
   color: var(--portfolio-color);
-  margin-right: 76;
 }
-.menu-item:not(:last-child) {
-  margin-right: 40px;
-}
-.logo {
-  display: flex;
-  align-items: center;
+.logo-header {
   margin-right: 76px;
 }
 .menu-link {
@@ -88,9 +84,6 @@ button {
 .menu-link:focus {
   color: var(--secondery-color);
   text-decoration: underline;
-}
-.header-adress {
-  font-style: normal;
 }
 .menu-link-contact {
   font-family: var(--primary-font);
@@ -107,27 +100,32 @@ button {
 }
 .haeder-container {
   display: flex;
-  text-align: center;
-  padding-left: 15px;
-  padding-right: 15px;
-  outline: 3px solid red;
+  align-items: center;
 }
 .header-nav {
   display: flex;
-  text-align: center;
-}
-.header-adress {
-  margin-left: auto;
-}
-.menu-contacts {
-  display: flex;
-  margin-left: auto;
-  justify-content: end;
-  gap: 40px;
 }
 .menu {
   display: flex;
   align-items: center;
+}
+.menu-item:not(:last-child) {
+  margin-right: 40px;
+}
+.menu {
+  display: flex;
+  align-items: center;
+}
+.menu-contacts {
+  display: flex;
+  align-items: center;
+}
+.menu-item-contacts:not(:last-child) {
+  margin-right: 40px;
+}
+.header-adress {
+  font-style: normal;
+  margin-left: auto;
 }
 /* HERO */
 
@@ -135,10 +133,9 @@ button {
   background: var(--portfolio-color);
   text-align: center;
   padding-top: 188px;
-  padding-bottom: 188px;
-  max-width: 2560px;
+  padding-bottom: 292px;
+  margin: 0 auto;
   text-align: center;
-  outline: 3px solid green;
 }
 .hero-text {
   font-size: 56px;
@@ -150,9 +147,11 @@ button {
   color: var(--primary-color);
 }
 .hero-button {
+  margin-top: 40px;
   border-radius: 4px;
   padding: 16px 32px;
   min-width: 169px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   font-family: var(--primary-font);
   font-weight: 500;
@@ -169,15 +168,30 @@ button {
   color: var(--primary-color);
   background-color: var(--secondery-color);
 }
+
 /* ABOUT US LIST WORKS */
 .main-about {
+  text-align: left;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--portfolio-color);
 }
+.main-list {
+  display: flex;
+  gap: 24px;
+  outline: 1px solid red;
+}
+.item-about {
+  margin: 0;
+  flex-basis: calc((100% - 3 * 24px) / 4);
+  outline: 1px solid green;
+}
 .main-text {
+  display: flex;
+  margin-top: 8px;
+  text-align: left;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -194,6 +208,18 @@ button {
 /* SUBTITLE */
 .subtitle {
   font-size: 36px;
+  margin-top: 120px;
+  margin-bottom: 72px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--portfolio-color);
+}
+.subtitle-team {
+  font-size: 36px;
+  padding-top: 120px;
+  padding-bottom: 72px;
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
@@ -206,10 +232,31 @@ button {
 .menu-team {
   background-color: var(--background-origin);
 }
+/* WHAT ARE WE DOING */
+.list-works {
+  display: flex;
+  gap: 24px;
+  padding: 0;
+}
 /* OUR TEAM */
+.menu-team {
+  background: #f4f4fd;
+  text-align: center;
+}
+.list-team {
+  display: flex;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.list-team > .link-team {
+  flex-basis: calc(100% / 4);
+  margin-left: 15px;
+  margin-right: 15px;
+}
 .name-team {
   font-weight: 500;
   font-size: 20px;
+  padding-top: 32px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-align: center;
@@ -218,9 +265,15 @@ button {
 .profession-team {
   font-size: 16px;
   line-height: 1.5;
+  padding-top: 8px;
   letter-spacing: 0.02em;
   text-align: center;
   color: var(--header-color);
+}
+.card-studio {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 /* FOOTER */
 .footer {
@@ -243,6 +296,8 @@ button {
 }
 /* NOT-VISIBLI */
 .not-visibli {
+  margin-bottom: 0;
+  margin-top: 120px;
   visibility: hidden;
 }
 /* <!-- BUTTON PORTFOLIO --> */
