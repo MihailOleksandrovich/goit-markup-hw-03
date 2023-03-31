@@ -4,28 +4,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Studio</title>
+    <title>WebStudio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.css"
     />
-    />
-    <link href="./css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body class="body">
-    <!-- HEADER -->
-    <header class="header-main">
-      <div class="container haeder-container">
-        <nav class="header-nav">
+  <body>
+    <!--HEADER-->
+    <header class="page-header">
+      <div class="container page-header-container">
+        <nav class="navigation">
           <a class="logo logo-header link" href="./index.html"
-            >Web<span class="logo-studio">Studio</span></a
-          >
+            >WEB<span class="header-part-word">Studio</span>
+          </a>
           <ul class="menu list">
             <li class="menu-item">
               <a class="menu-link link" href="./index.html">Studio</a>
@@ -37,16 +36,17 @@
               <a class="menu-link link" href="">Contacts</a>
             </li>
           </ul>
+          <!--Navigation-->
         </nav>
-        <address class="header-adress">
-          <ul class="menu-contacts list">
-            <li class="menu-item-contacts">
-              <a class="menu-link-contact link" href="mailto:info@devstudio.com"
+        <address class="communication-methods">
+          <ul class="menu list">
+            <li class="mail-number">
+              <a class="link contacts" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
-            <li class="menu-item-contacts">
-              <a class="menu-link-contact link" href="tel:+110001111111"
+            <li class="mail-number">
+              <a class="link contacts" href="tel:+110001111111"
                 >+11 (000) 111-11-11</a
               >
             </li>
@@ -55,47 +55,45 @@
       </div>
     </header>
     <main>
-      <!-- HERO -->
+      <!-- =HERO=== -->
       <section class="hero">
         <div class="container">
-          <h1 class="hero-text">
+          <h1 class="section-name">
             Effective Solutions <br />
             for Your Business
           </h1>
-          <button class="hero-button" type="button">Order Service</button>
+          <button class="modal-btn" type="button">Order Service</button>
         </div>
       </section>
-      <!-- ABOUT US -->
-      <section class="menu-works section-about">
+      <!--==========2-SECTION======-->
+      <section class="section-list-best section-second">
         <div class="container">
-          <h2 class="not-visibli" hidden>About us</h2>
-          <ul class="main-list list">
-            <li class="item-about">
-              <h3 class="main-about">Strategy</h3>
-              <p class="main-text">
+          <h2 class="h-second-section" hidden>Strategy</h2>
+          <ul class="list list-of-benefits">
+            <li class="text-benefit">
+              <h3 class="section-subtitle">Strategy</h3>
+              <p class="text-section-subtitle">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
             </li>
-
-            <li class="item-about">
-              <h3 class="main-about">Punctuality</h3>
-              <p class="main-text">
+            <li class="text-benefit">
+              <h3 class="section-subtitle">Punctuality</h3>
+              <p class="text-section-subtitle">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
             </li>
-
-            <li class="item-about">
-              <h3 class="main-about">Diligence</h3>
-              <p class="main-text">
+            <li class="text-benefit">
+              <h3 class="section-subtitle">Diligence</h3>
+              <p class="text-section-subtitle">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
               </p>
             </li>
-            <li class="item-about">
-              <h3 class="main-about">Technologies</h3>
-              <p class="main-text">
+            <li class="text-benefit">
+              <h3 class="section-subtitle">Technologies</h3>
+              <p class="text-section-subtitle">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
               </p>
@@ -103,31 +101,31 @@
           </ul>
         </div>
       </section>
-      <!-- What are we doing -->
-      <section class="main-works">
+      <!-- <! What are we doing-->
+      <section class="section-list-gobs section">
         <div class="container">
-          <h2 class="subtitle">What are we doing</h2>
-          <ul class="list-works list">
-            <li class="link-works">
+          <h2 class="section-title">What are we doing</h2>
+          <ul class="list work-examples">
+            <li class="exmpl-work-picture">
               <img
                 src="./images/computer.jpg"
-                alt="computer"
+                alt="website development"
                 width="360"
                 height="300"
               />
             </li>
-            <li class="link-works">
+            <li class="exmpl-work-picture">
               <img
-                src="./images/telefone.jpg"
-                alt="telefone"
+                src="./images/telefone.jpg "
+                alt="application creation"
                 width="360"
                 height="300"
               />
             </li>
-            <li class="link-works">
+            <li class="exmpl-work-picture">
               <img
-                src="./images/laptop.jpg"
-                alt="laptop"
+                src="./images/laptop.jpg "
+                alt="adaptive layout"
                 width="360"
                 height="300"
               />
@@ -135,74 +133,70 @@
           </ul>
         </div>
       </section>
-      <!-- OUR TEAM -->
-      <section class="menu-team section-team">
+      <!-- <-- Fourth section -->
+      <section class="section-list-team section">
         <div class="container">
-          <h2 class="subtitle">Our Team</h2>
-          <ul class="list-team list">
-            <li class="link-team link-our">
+          <h2 class="section-title">Our Team</h2>
+          <ul class="list employees-cards">
+            <li class="links-fourth-section employee-card">
               <img
-                class="card-studio"
-                src="./images/fotomark.jpg"
-                alt="fotomark"
+                src="./images/fotomark.jpg "
+                alt="Mark Guerrero Product
+              Designer"
                 width="264"
                 height="260"
               />
-              <div class="container-list-team">
-                <h3 class="name-team">Mark Guerrero</h3>
-                <p class="profession-team">Product Designer</p>
+              <div class="name-vacancy-employee">
+                <h3 class="web-studioworker">Mark Guerrero</h3>
+                <p class="web-studioworker-speciality">Product Designer</p>
               </div>
             </li>
-            <li class="link-team link-our">
+            <li class="links-fourth-section employee-card">
               <img
-                class="card-studio"
                 src="./images/fototom.jpg"
-                alt="fototod"
+                alt="Tom Ford Frontend Developer"
                 width="264"
                 height="260"
               />
-              <div class="container-list-team">
-                <h3 class="name-team">Tom Ford</h3>
-                <p class="profession-team">Frontend Developer</p>
+              <div class="name-vacancy-employee">
+                <h3 class="web-studioworker">Tom Ford</h3>
+                <p class="web-studioworker-speciality">Frontend Developer</p>
               </div>
             </li>
-            <li class="link-team link-our">
+            <li class="links-fourth-section employee-card">
               <img
-                class="card-studio"
                 src="./images/fotocamila.jpg"
-                alt="fotocamila"
+                alt="Camila Garcia Marketing"
                 width="264"
                 height="260"
               />
-              <div class="container-list-team">
-                <h3 class="name-team">Camila Garcia</h3>
-                <p class="profession-team">Marketing</p>
+              <div class="name-vacancy-employee">
+                <h3 class="web-studioworker">Camila Garcia</h3>
+                <p class="web-studioworker-speciality">Marketing</p>
               </div>
             </li>
-            <li class="link-team link-our">
+            <li class="links-fourth-section employee-card">
               <img
-                class="card-studio"
                 src="./images/fotodaniel.jpg"
-                alt="fotodaniel"
+                alt="Daniel Wilson UI Designer"
                 width="264"
                 height="260"
               />
-              <div class="container-list-team">
-                <h3 class="name-team">Daniel Wilson</h3>
-                <p class="profession-team">UI Designer</p>
+              <div class="name-vacancy-employee">
+                <h3 class="web-studioworker">Daniel Wilson</h3>
+                <p class="web-studioworker-speciality">UI Designer</p>
               </div>
             </li>
           </ul>
         </div>
       </section>
     </main>
-    <!-- FOOTER -->
     <footer class="footer">
       <div class="container">
-        <a class="logo link" href="./index.html"
-          >Web<span class="footer-logo-studio link">Studio</span></a
-        >
-        <p class="footer-text">
+        <a class="logo link logo-footer" href="./index.html"
+          >WEB<span class="footer-part-word">Studio</span>
+        </a>
+        <p class="paragraph-footer">
           Increase the flow of customers and <br />
           sales for your business with digital <br />
           marketing & growth solutions.
